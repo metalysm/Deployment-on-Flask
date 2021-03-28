@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="UTF-8">
+<title>Iris Flower ML API</title>
+</head>
+<body>
+<div class="login">
+<h1>Predict The Flower (Iris)</h1>
+<!-- Main Input For Receiving Query to our ML -->
+<form action="{{ url_for('predict')}}"method="post">
+<input type="text" name="SepalLength" placeholder="SepalLength" required="required" style="font-family:verdana" />
+<input type="text" name="SepalWidth" placeholder="SepalWidth" required="required" style="font-family:verdana" />
+<input type="text" name="PetalLength" placeholder="PetalLength" required="required" style="font-family:verdana" />
+<input type="text" name="PetalWidth" placeholder="PetalWidth" required="required" style="font-family:verdana" />
+<button type="submit" class="btn btn-primary btn-block btn-large" style="font-family:verdana">Predict</button>
+</form>
+<br>
+<br>
+{{ prediction_text }}
+</div>
+</body>
+</html>
