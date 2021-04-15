@@ -5,5 +5,3 @@ requests
 scikit-learn
 scipy
 numpy
-render_template
-request
